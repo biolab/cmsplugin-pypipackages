@@ -12,7 +12,7 @@
 				<td class="name">{{ package.name }}</td>
 				<td>{{ package.summary }}</td>
 				<td>{{ package.version }}</td>
-				<td><a href="http://pypi.python.org/pypi/{{ package.name }}">PyPi</a> {% if package.home_page %}<a href="{{ package.home_page }}">H</a>{% endif %} {% if package.download_url %}<a href="{{ package.download_url }}">D</a>{% endif %} {% if package.repo_url %}<a href="{{ package.repo_url }}">R</a>{% endif %} {% if package.docs_url %}<a href="{{ package.docs_url }}">Docs</a>{% endif %}</td>
+				<td><a href="http://pypi.python.org/pypi/{{ package.name }}">PyPi</a> {% if package.home_page %}<a href="{{ package.home_page }}">Home page</a>{% endif %} {% if package.download_url %}<a href="{{ package.download_url }}">Download</a>{% endif %} {% if package.repo_url %}<a href="{{ package.repo_url }}">Repository</a>{% endif %} {% if package.docs_url %}<a href="{{ package.docs_url }}">Docs</a>{% endif %}</td>
 			</tr>
 			<tr class="description">
 				<td colspan="4">{{ package.description|restructuredtext }}</td>
